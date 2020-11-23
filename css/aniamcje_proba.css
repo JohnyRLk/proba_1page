@@ -1,0 +1,351 @@
+.open_menu {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  float: right;
+  margin-top: 28px;
+  margin-right: 25px;
+}
+
+.hr-menu {
+  width: 320px;
+  border-top: 1px solid white;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.string_menu:hover {
+  border-left: 6px solid #ffe600;
+}
+
+.string_menu {
+  height: 70px;
+  padding-left: 14px;
+  padding-top: 30px;
+  font-size: 24px;
+  color: white;
+  font-weight: bold;
+  font-family: "Heebo", sans-serif;
+}
+
+.slide_menu_container {
+  position: relative;
+  z-index: 10000;
+}
+
+.slide_menu {
+  height: 700px;
+  position: absolute;
+  width: 350px;
+  top: -10px;
+  right: -350px;
+  background-color: #2e2e38;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: fixed;
+  z-index: 9999;
+}
+
+.slide_menu_opened {
+  right: 0px;
+}
+
+.vl {
+  border-left: 5px solid #ffe600;
+}
+
+.explore_text {
+  font-size: 16px;
+  color: #747480;
+}
+
+.slide_menu .div {
+  padding: 8px 8px 8px 32px;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  left: 30px;
+}
+
+.slide_menu div:hover {
+  color: #ffffff;
+}
+
+.slide_menu .close_menu {
+  top: 0px;
+  right: 0px;
+  font-size: 45px;
+  margin-right: 20px;
+  color: white;
+  text-align: end;
+}
+
+@media screen and (max-width: 700px) {
+  .slide_menu {
+    width: 100%;
+    margin-top: 79px;
+    margin-left: 100%;
+    right: unset;
+  }
+  .slide_menu_opened {
+    margin-left: 0%;
+  }
+  .slide_menu div {
+    font-size: 18px;
+  }
+}
+
+.arrowRight {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  color: white;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.slideshow_holderr {
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow_containerr {
+  position: relative;
+  margin: auto;
+  left: 0%;
+  transition: 2s ease-out;
+  height: 643px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.text {
+  color: white;
+  font-size: 24px;
+  padding-top: 520px;
+  width: 100%;
+  text-align: center;
+}
+
+.some-element {
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.boxflex17_container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  width: 100%;
+  text-align: center;
+  flex-direction: row;
+  color: white;
+  font-family: "Heebo", sans-serif;
+  font-size: 14px;
+}
+
+.srow {
+  width: 10px !important;
+  height: 5px !important;
+  margin-top: 2px;
+  margin-right: 5px;
+  padding-top: 590;
+}
+
+.photo-grand:hover .srow {
+  padding-right: 10px;
+  transition-duration: 0.2s;
+}
+
+.discover {
+  display: none;
+}
+
+.photo-grand:hover .discover {
+  display: block;
+}
+
+.some-element {
+  display: none;
+}
+
+.text:hover {
+  padding-top: 480px;
+  transition-duration: 0.2s;
+}
+
+.up_text:hover .some-element {
+  display: block;
+}
+
+.slider {
+  position: absolute;
+  width: 99%;
+  height: 100%;
+}
+
+.slider1 {
+  left: 0%;
+}
+
+.slider2 {
+  left: 25%;
+}
+
+.slider3 {
+  left: 50%;
+}
+
+.slider4 {
+  left: 75%;
+}
+
+.slider5 {
+  left: 100%;
+}
+
+.slider6 {
+  left: 125%;
+}
+
+.slider7 {
+  left: 150%;
+}
+
+.carusel {
+  margin: 10px 60px;
+}
+.row_posters {
+  display: flex;
+  align-items: center;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  min-height: 215px;
+  transition: 500ms;
+  scroll-behavior: smooth;
+}
+
+.row_posters::-webkit-scrollbar {
+  display: none;
+}
+
+.poster {
+  object-fit: contain;
+  height: 100%;
+}
+
+.poster_carusel {
+  display: inline-block;
+  position: relative;
+  height: 100px;
+  width: fit-content;
+  margin: 0 1px;
+  cursor: pointer;
+  transition: height 500ms;
+}
+
+.poster_carusel:hover {
+  height: 187px;
+}
+
+.poster_title {
+  font-family: "Heebo", sans-serif;
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  color: #f0f0f0;
+  opacity: 1;
+  transition: opacity 2000ms 1000ms;
+}
+.poster_carusel:hover .poster_title {
+  opacity: 0;
+  transition: opacity 100ms;
+}
+
+.poster_info {
+  position: absolute;
+  left: 5px;
+  bottom: 30px;
+  font-size: 14px;
+  width: 250px;
+  color: white;
+  opacity: 0;
+  transition: opacity 100ms;
+}
+.poster_carusel:hover .poster_info {
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+.poster_info p {
+  padding-top: 5px;
+}
+.scroll_button {
+  position: absolute;
+  height: 187px;
+  width: 43px;
+  background-color: #0f0f0f4b;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.right_arrow {
+  right: 60px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(20%);
+  transition: all 500ms;
+}
+.left_arrow {
+  left: 60px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-20%);
+  transition: all 500ms;
+}
+.row_posters:hover .right_arrow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0%);
+}
+.row_posters:hover .left_arrow {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0%);
+}
+.space {
+  min-width: 155px;
+  height: 126px;
+}
+.arrow_carusel {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right_carusel {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left_carusel {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
